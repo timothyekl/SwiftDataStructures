@@ -1,5 +1,5 @@
 //
-//  Bijection.swift
+//  OrderedDictionary.swift
 //  SwiftDataStructures
 //
 //  Created by Tim Ekl on 6/2/14.
@@ -9,18 +9,16 @@
 import Foundation
 
 struct OrderedDictionary<Tk: Hashable, Tv> {
-    var keys: Array<Tk>
-    var values: Dictionary<Tk,Tv>
+    var keys: Array<Tk> = []
+    var values: Dictionary<Tk,Tv> = [:]
     
     var count: Int {
     assert(keys.count == values.count, "Keys and values array out of sync")
     return self.keys.count;
     }
     
-    init() {
-        keys = []
-        values = [:]
-    }
+    // Explicitly define an empty initializer to prevent the default memberwise initializer from being generated
+    init() {}
     
     subscript(index: Int) -> Tv? {
         get {
