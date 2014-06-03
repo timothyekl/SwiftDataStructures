@@ -7,8 +7,9 @@
 //
 
 import Foundation
-import SwiftDataStructures
 
-let od = OrderedDictionary(keys: ["Tim"], values: ["Tim" : 24])
-println(od)
+var od = OrderedDictionary<String,Int>()
+od["Tim"] = 23
+od[0] = 24
+println("\(od) (\(od.count))")
 
