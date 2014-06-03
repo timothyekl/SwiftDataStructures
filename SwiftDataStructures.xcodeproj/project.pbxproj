@@ -10,6 +10,9 @@
 		223BC16C193D750400BDFAFA /* SwiftDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 223BC16B193D750400BDFAFA /* SwiftDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		223BC172193D750500BDFAFA /* SwiftDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223BC166193D750400BDFAFA /* SwiftDataStructures.framework */; };
 		223BC179193D750500BDFAFA /* SwiftDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223BC178193D750500BDFAFA /* SwiftDataStructuresTests.swift */; };
+		223BC183193D752C00BDFAFA /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223BC182193D752C00BDFAFA /* OrderedDictionary.swift */; };
+		223BC184193D752E00BDFAFA /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223BC182193D752C00BDFAFA /* OrderedDictionary.swift */; };
+		223BC18C193D80D600BDFAFA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223BC18B193D80D600BDFAFA /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +25,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		223BC187193D80D600BDFAFA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		223BC166193D750400BDFAFA /* SwiftDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		223BC16A193D750400BDFAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,6 +44,9 @@
 		223BC171193D750500BDFAFA /* SwiftDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		223BC177193D750500BDFAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		223BC178193D750500BDFAFA /* SwiftDataStructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataStructuresTests.swift; sourceTree = "<group>"; };
+		223BC182193D752C00BDFAFA /* OrderedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionary.swift; sourceTree = "<group>"; };
+		223BC189193D80D600BDFAFA /* SDSRunner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDSRunner; sourceTree = BUILT_PRODUCTS_DIR; };
+		223BC18B193D80D600BDFAFA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		223BC186193D80D600BDFAFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +80,7 @@
 			children = (
 				223BC168193D750400BDFAFA /* SwiftDataStructures */,
 				223BC175193D750500BDFAFA /* SwiftDataStructuresTests */,
+				223BC18A193D80D600BDFAFA /* SDSRunner */,
 				223BC167193D750400BDFAFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +90,7 @@
 			children = (
 				223BC166193D750400BDFAFA /* SwiftDataStructures.framework */,
 				223BC171193D750500BDFAFA /* SwiftDataStructuresTests.xctest */,
+				223BC189193D80D600BDFAFA /* SDSRunner */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				223BC16B193D750400BDFAFA /* SwiftDataStructures.h */,
+				223BC182193D752C00BDFAFA /* OrderedDictionary.swift */,
 				223BC169193D750400BDFAFA /* Supporting Files */,
 			);
 			path = SwiftDataStructures;
@@ -100,6 +128,14 @@
 				223BC177193D750500BDFAFA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		223BC18A193D80D600BDFAFA /* SDSRunner */ = {
+			isa = PBXGroup;
+			children = (
+				223BC18B193D80D600BDFAFA /* main.swift */,
+			);
+			path = SDSRunner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +188,23 @@
 			productReference = 223BC171193D750500BDFAFA /* SwiftDataStructuresTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		223BC188193D80D600BDFAFA /* SDSRunner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223BC18D193D80D600BDFAFA /* Build configuration list for PBXNativeTarget "SDSRunner" */;
+			buildPhases = (
+				223BC185193D80D600BDFAFA /* Sources */,
+				223BC186193D80D600BDFAFA /* Frameworks */,
+				223BC187193D80D600BDFAFA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDSRunner;
+			productName = SDSRunner;
+			productReference = 223BC189193D80D600BDFAFA /* SDSRunner */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +220,9 @@
 					223BC170193D750500BDFAFA = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 223BC165193D750400BDFAFA;
+					};
+					223BC188193D80D600BDFAFA = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -184,6 +240,7 @@
 			targets = (
 				223BC165193D750400BDFAFA /* SwiftDataStructures */,
 				223BC170193D750500BDFAFA /* SwiftDataStructuresTests */,
+				223BC188193D80D600BDFAFA /* SDSRunner */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223BC183193D752C00BDFAFA /* OrderedDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +276,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				223BC179193D750500BDFAFA /* SwiftDataStructuresTests.swift in Sources */,
+				223BC184193D752E00BDFAFA /* OrderedDictionary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223BC185193D80D600BDFAFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223BC18C193D80D600BDFAFA /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +383,7 @@
 		223BC17D193D750500BDFAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -327,12 +395,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		223BC17E193D750500BDFAFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -381,6 +451,26 @@
 			};
 			name = Release;
 		};
+		223BC18E193D80D600BDFAFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		223BC18F193D80D600BDFAFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -406,6 +496,14 @@
 			buildConfigurations = (
 				223BC180193D750500BDFAFA /* Debug */,
 				223BC181193D750500BDFAFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		223BC18D193D80D600BDFAFA /* Build configuration list for PBXNativeTarget "SDSRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223BC18E193D80D600BDFAFA /* Debug */,
+				223BC18F193D80D600BDFAFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
