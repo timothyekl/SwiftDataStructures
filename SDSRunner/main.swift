@@ -11,5 +11,5 @@ import Foundation
 var od = OrderedDictionary<String,Int>()
 od["Tim"] = 23
 od[0] = 24
+od["Catherine"] = 23
 println(od.description)
-
