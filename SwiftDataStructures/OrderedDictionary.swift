@@ -54,4 +54,13 @@ struct OrderedDictionary<Tk: Hashable, Tv> {
             }
         }
     }
+    
+    var description: String {
+        var result = "{\n"
+        for i in 0..self.count {
+            result += "[\(i)]: \(self.keys[i]) => \(self[i])\n"
+        }
+        result += "}"
+        return result
+    }
 }
