@@ -27,7 +27,7 @@ struct OrderedDictionary<Tk: Hashable, Tv> {
         }
         set(newValue) {
             let key = self.keys[index]
-            if newValue {
+            if newValue != nil {
                 self.values[key] = newValue
             } else {
                 self.values.removeValueForKey(key)
@@ -55,7 +55,7 @@ struct OrderedDictionary<Tk: Hashable, Tv> {
     
     var description: String {
         var result = "{\n"
-        for i in 0..self.count {
+        for i in 0...self.count {
             result += "[\(i)]: \(self.keys[i]) => \(self[i])\n"
         }
         result += "}"
