@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		223BC16C193D750400BDFAFA /* SwiftDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 223BC16B193D750400BDFAFA /* SwiftDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		223BC172193D750500BDFAFA /* SwiftDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223BC166193D750400BDFAFA /* SwiftDataStructures.framework */; };
-		223BC179193D750500BDFAFA /* SwiftDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223BC178193D750500BDFAFA /* SwiftDataStructuresTests.swift */; };
 		223BC183193D752C00BDFAFA /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223BC182193D752C00BDFAFA /* OrderedDictionary.swift */; };
-		223BC184193D752E00BDFAFA /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223BC182193D752C00BDFAFA /* OrderedDictionary.swift */; };
 		223BC18C193D80D600BDFAFA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223BC18B193D80D600BDFAFA /* main.swift */; };
 		223BC193193D97C600BDFAFA /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223BC182193D752C00BDFAFA /* OrderedDictionary.swift */; };
+		2280D31F1CAB77E200444DA8 /* OrderedDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280D31E1CAB77E200444DA8 /* OrderedDictionaryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +43,10 @@
 		223BC16B193D750400BDFAFA /* SwiftDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDataStructures.h; sourceTree = "<group>"; };
 		223BC171193D750500BDFAFA /* SwiftDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		223BC177193D750500BDFAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		223BC178193D750500BDFAFA /* SwiftDataStructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataStructuresTests.swift; sourceTree = "<group>"; };
 		223BC182193D752C00BDFAFA /* OrderedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionary.swift; sourceTree = "<group>"; };
 		223BC189193D80D600BDFAFA /* SDSRunner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDSRunner; sourceTree = BUILT_PRODUCTS_DIR; };
 		223BC18B193D80D600BDFAFA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2280D31E1CAB77E200444DA8 /* OrderedDictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionaryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +116,7 @@
 		223BC175193D750500BDFAFA /* SwiftDataStructuresTests */ = {
 			isa = PBXGroup;
 			children = (
-				223BC178193D750500BDFAFA /* SwiftDataStructuresTests.swift */,
+				2280D31E1CAB77E200444DA8 /* OrderedDictionaryTests.swift */,
 				223BC176193D750500BDFAFA /* Supporting Files */,
 			);
 			path = SwiftDataStructuresTests;
@@ -278,8 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223BC179193D750500BDFAFA /* SwiftDataStructuresTests.swift in Sources */,
-				223BC184193D752E00BDFAFA /* OrderedDictionary.swift in Sources */,
+				2280D31F1CAB77E200444DA8 /* OrderedDictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
