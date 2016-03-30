@@ -212,6 +212,8 @@
 		223BC15D193D750400BDFAFA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Tim Ekl";
 				TargetAttributes = {
@@ -492,6 +494,7 @@
 				223BC17E193D750500BDFAFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		223BC17F193D750500BDFAFA /* Build configuration list for PBXNativeTarget "SwiftDataStructuresTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +503,7 @@
 				223BC181193D750500BDFAFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		223BC18D193D80D600BDFAFA /* Build configuration list for PBXNativeTarget "SDSRunner" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +512,7 @@
 				223BC18F193D80D600BDFAFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
