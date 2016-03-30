@@ -37,4 +37,14 @@ class OrderedDictionaryTests: XCTestCase {
         XCTAssertEqual(od[1], 2)
     }
     
+    func testDeleteOrderedDictionaryElement() {
+        var od = OrderedDictionary<String, Int>()
+        
+        od["foo"] = 1
+        od["foo"] = nil
+        
+        XCTAssertEqual(od.count, 0)
+        XCTAssertEqual(od["foo"], nil)
+    }
+    
 }

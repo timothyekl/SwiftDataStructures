@@ -44,11 +44,11 @@ struct OrderedDictionary<Tk: Hashable, Tv> {
             if newValue == nil {
                 self.values.removeValueForKey(key)
                 self.keys = self.keys.filter {$0 != key}
-            }
-            
-            let oldValue = self.values.updateValue(newValue!, forKey: key)
-            if oldValue == nil {
-                self.keys.append(key)
+            } else {
+                let oldValue = self.values.updateValue(newValue!, forKey: key)
+                if oldValue == nil {
+                    self.keys.append(key)
+                }
             }
         }
     }
