@@ -3,7 +3,7 @@
 //  SwiftDataStructures
 //
 //  Created by Tim Ekl on 6/2/14.
-//  Copyright (c) 2014 Tim Ekl. All rights reserved.
+//  Copyright (c) 2014 Tim Ekl. Available under MIT License. See LICENSE.md.
 //
 
 import Foundation

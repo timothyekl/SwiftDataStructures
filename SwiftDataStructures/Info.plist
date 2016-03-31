@@ -21,7 +21,7 @@
 	<key>CFBundleVersion</key>
 	<string>${CURRENT_PROJECT_VERSION}</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014 Tim Ekl. All rights reserved.</string>
+	<string>Copyright © 2014 Tim Ekl. Available under MIT License. See LICENSE.md.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
 </dict>
